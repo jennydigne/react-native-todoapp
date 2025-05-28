@@ -2,7 +2,7 @@ import { useLocalSearchParams, useRouter } from "expo-router";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
 export default function DetailScreen() {
-    const { id, title, done, description, createdAt } = useLocalSearchParams();
+    const { id, done, description, createdAt } = useLocalSearchParams();
     const router = useRouter();
 
     const handleToggleDone = () => {
@@ -126,9 +126,9 @@ const styles = StyleSheet.create({
         alignItems: "center",
         flexDirection: "row",
         justifyContent: "space-between",
-        borderTopColor: "gray",
-        borderTopWidth: 1,
-        padding: 15
+        padding: 20, 
+        backgroundColor: "lightgray"
+
     },
     dateText: {
         fontSize: 16,
